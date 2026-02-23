@@ -1,16 +1,114 @@
-/* Starter CSS to edit */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 40px auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: onest, onest;
+    background-color: #1a1a1a;
+    color: #ffffff;
     padding: 20px;
 }
 
-h1 {
-    text-align: center;
+.card {
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    padding: 36px;
+    max-width: 420px;
+    width: 100%;
 }
 
-#output {
+h1 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #999;
+    margin-bottom: 24px;
+    font-size: 0.9rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    margin-top: 14px;
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #C6E844;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
     margin-top: 20px;
-    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #C6E844;
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d4f050;
+}
+
+#result {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 12px;
+    line-height: 1.7;
+    display: none;
+}
+
+#result.save {
+    display: block;
+    background-color: rgba(198, 232, 68, 0.15);
+    border: 1px solid #C6E844;
+}
+
+#result.no-save {
+    display: block;
+    background-color: rgba(255, 80, 80, 0.1);
+    border: 1px solid #ff5050;
+}
+
+#result.equal {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid #888;
+}
+
+.greeting {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.verdict {
+    font-weight: 600;
+    margin-top: 8px;
 }
